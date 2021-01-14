@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "build:ssr": "deno run --config=../../tsconfig.json --importmap=../../import_map.json --allow-all --unstable ./buildssr.ts ./App.svelte",
+        "start:oakserver": "deno run --allow-net=localhost,0.0.0.0 oakServer.js",
+        "start": "npm run build:ssr && npm run start:oakserver"
+    }
+}
