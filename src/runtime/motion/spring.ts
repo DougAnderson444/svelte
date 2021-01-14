@@ -1,6 +1,6 @@
 import { Readable, writable } from '../store/index.ts';
 import { loop, now, Task } from '../internal/index.ts';
-import { is_date } from './utils';
+import { is_date } from './utils.ts';
 
 interface TickContext<T> {
 	inv_mass: number;
