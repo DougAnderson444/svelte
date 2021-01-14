@@ -1,0 +1,8 @@
+{
+    "name": "deno-svelte",
+    "version": "3.29.4",
+    "scripts": {
+        "build": "deno run --config=../../tsconfig.json --importmap=../../import_map.json --allow-all --unstable ./build.ts ./Spring.svelte",
+        "start": "python3 -m http.server"
+    }
+}
