@@ -55,3 +55,8 @@ export function create_ssr_component (fn) {
     $$render
   }
 }
+
+export function add_attribute (name, value, boolean) {
+  if (value == null || (boolean && !value)) return ''
+  return ` ${name}${value === true ? '' : `=${typeof value === 'string' ? JSON.stringify(escape(value)) : `"${value}"`}`}`
+}
